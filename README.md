@@ -15,5 +15,5 @@ git status // check new or updated files
 git add <filename> or .
 git commit -m "Relevant message for commit"
 git push origin <branch-name>  e.g  git push origin master
-jyoti paga hai
+jyoti smjhdar hai
 ```
