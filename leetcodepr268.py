@@ -10,6 +10,6 @@ def missing_number(nums):
     array=list(res)
     missing_number =array[0]
     return missing_number
-nums = [1,0,3]
+nums = [1,0,2,3]
 result = missing_number(nums)
 print(result)
