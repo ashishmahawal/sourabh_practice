@@ -1,15 +1,18 @@
-nums = [4,1,2,1,2]
-res =[]
-for i in range(0,len(nums)):
-    for j in range(i+1,len(nums)):
-        if nums[i] != nums[j]:
-            res = nums[i]
-        elif nums[j] != nums[i]:
-            res = nums[j]
-print(res)
+nums = [2,1,1,2,3]
+def singleelement(nums):
+    num_dict = {}
+    for num in nums:
+        if num in num_dict.keys():
+            num_dict[num]+=1
+        else:
+            num_dict[num]=1
+    for key in num_dict.keys():
+        if num_dict[key] == 1:
+            return key        
+
 
 # another way 
-numlist =[1,2,1,2,4]
-for num in numlist:
-    if numlist.count(num)==1:
-        print(num)
+# numlist =[1,2,1,2,4]
+# for num in numlist:
+#     if numlist.count(num)==1:
+#         print(num)
